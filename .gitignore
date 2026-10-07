@@ -1,0 +1,27 @@
+# secrets
+.env
+.streamlit/secrets.toml
+*.key
+*.pem
+
+# data and large artifacts (never commit)
+data/
+*.tar
+*.tar.gz
+*.zip
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# python / notebooks
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

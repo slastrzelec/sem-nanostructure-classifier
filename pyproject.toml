@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semcls"
+version = "0.1.0"
+description = "SEM nanostructure classifier with leakage-free evaluation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Sławomir Strzelec" }]
+dependencies = ["numpy", "pandas", "scipy", "scikit-learn", "Pillow"]
+
+[project.optional-dependencies]
+torch = ["torch", "torchvision"]
+demo = ["torch", "torchvision", "streamlit"]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 140
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E9", "F"]
+
+[tool.ruff.lint.per-file-ignores]
+# Scripts that produced results frozen in SPEC.md (E0, splits, training launcher): not edited after use.
+"scripts/e0_report.py" = ["F401"]
+"scripts/kaggle_run.py" = ["F401"]
+"scripts/make_splits.py" = ["F841", "F541"]

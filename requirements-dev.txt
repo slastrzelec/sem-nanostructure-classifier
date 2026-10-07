@@ -1,0 +1,8 @@
+# Tests (Python 3.10; versions the test suite was run with). Torch-dependent tests need CPU torch/torchvision (see requirements-demo.txt) and are skipped without it.
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+Pillow==12.3.0
+pytest==9.1.1
+ruff==0.16.8

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it and the dataset it is built on."
+title: "SEM nanostructure classifier with leakage-free evaluation"
+type: software
+version: 0.1.0
+license: MIT
+authors:
+  - family-names: Strzelec
+    given-names: Sławomir
+repository-code: "https://github.com/slastrzelec/sem-nanostructure-classifier"
+references:
+  - type: article
+    title: "The first annotated set of scanning electron microscopy images for nanoscience"
+    authors:
+      - family-names: Aversa
+        given-names: Rossella
+      - family-names: Modarres
+        given-names: Mohammad Hadi
+      - family-names: Cozzini
+        given-names: Stefano
+      - family-names: Ciancio
+        given-names: Regina
+    journal: "Scientific Data"
+    volume: 5
+    year: 2018
+    notes: "Article 180172. Dataset: NFFA-EUROPE 100% SEM Dataset, DOI 10.23728/b2share.80df8606fcdb4b2bae1656f0dc6db8ba (CC BY)."

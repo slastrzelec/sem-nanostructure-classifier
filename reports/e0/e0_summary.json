@@ -1,0 +1,422 @@
+{
+ "generated": "2026-10-05 09:35:38",
+ "n_images": 21169,
+ "python": "3.10.12",
+ "numpy": "2.2.6",
+ "pandas": "2.3.3",
+ "scipy": "1.15.3",
+ "script_sha256": "81301efe128eca641b3a1ec66bce6c542631b67708a47e6b9ccf17b4cad6b7c0",
+ "class_counts": {
+  "Patterned_surface": 4752,
+  "MEMS_devices_and_electrodes": 4583,
+  "Particles": 3905,
+  "Nanowires": 3815,
+  "Tips": 1621,
+  "Biological": 962,
+  "Powder": 898,
+  "Films_Coated_Surface": 309,
+  "Porous_Sponge": 174,
+  "Fibres": 150
+ },
+ "imbalance_max_over_min": 31.7,
+ "code_per_class": {
+  "Biological": {
+   "L7": 962
+  },
+  "Fibres": {
+   "L9": 150
+  },
+  "Films_Coated_Surface": {
+   "L3": 309
+  },
+  "MEMS_devices_and_electrodes": {
+   "L8": 4583
+  },
+  "Nanowires": {
+   "L6": 3815
+  },
+  "Particles": {
+   "L2": 3905
+  },
+  "Patterned_surface": {
+   "L1": 4752
+  },
+  "Porous_Sponge": {
+   "L0": 174
+  },
+  "Powder": {
+   "L4": 898
+  },
+  "Tips": {
+   "L5": 1621
+  }
+ },
+ "sizes_wxh": {
+  "1022x766": 5,
+  "1023x767": 55,
+  "1024x768": 20893,
+  "2048x1536": 38,
+  "3072x2304": 178
+ },
+ "modes": {
+  "RGB": 21169
+ },
+ "rgb_that_is_really_gray_%": 13.5,
+ "file_kb_by_class": {
+  "Biological": 691,
+  "Fibres": 518,
+  "Films_Coated_Surface": 628,
+  "MEMS_devices_and_electrodes": 632,
+  "Nanowires": 544,
+  "Particles": 546,
+  "Patterned_surface": 570,
+  "Porous_Sponge": 652,
+  "Powder": 672,
+  "Tips": 435
+ },
+ "exact_dup_groups": 318,
+ "exact_dup_images_in_groups": 650,
+ "exact_dup_extra_copies": 332,
+ "exact_dup_groups_across_classes": 0,
+ "filename_stem_collisions": 295,
+ "phash_pair_distance_hist_0_to_16": {
+  "0": 812,
+  "1": 0,
+  "2": 4820,
+  "3": 0,
+  "4": 25401,
+  "5": 0,
+  "6": 69489,
+  "7": 0,
+  "8": 141535,
+  "9": 0,
+  "10": 260359,
+  "11": 0,
+  "12": 481836,
+  "13": 0,
+  "14": 924588,
+  "15": 0,
+  "16": 1861609
+ },
+ "phash_pairs_stored_le_T": {
+  "T": 8,
+  "pairs": 242057
+ },
+ "near_dup": {
+  "phash<=2&thumb_corr>=0.95": {
+   "pairs": 3227,
+   "pairs_same_class": 2218,
+   "pairs_cross_class": 1009,
+   "images_with_near_dup_%": 7.2,
+   "clusters": 446,
+   "largest_cluster": 303,
+   "clusters_spanning_classes": 11
+  },
+  "phash<=4&thumb_corr>=0.95": {
+   "pairs": 15040,
+   "pairs_same_class": 8648,
+   "pairs_cross_class": 6392,
+   "images_with_near_dup_%": 11.95,
+   "clusters": 591,
+   "largest_cluster": 657,
+   "clusters_spanning_classes": 13
+  },
+  "phash<=8&thumb_corr>=0.95": {
+   "pairs": 93676,
+   "pairs_same_class": 43007,
+   "pairs_cross_class": 50669,
+   "images_with_near_dup_%": 21.53,
+   "clusters": 737,
+   "largest_cluster": 2012,
+   "clusters_spanning_classes": 21
+  }
+ },
+ "info_bar": {
+  "definition": "longest run of >= 20 consecutive rows with mean gray > 225.0 (bright) or < 30.0 (dark)",
+  "bright_band_%": 60.3,
+  "dark_band_%": 14.1,
+  "bright_band_starts_in_bottom_20%_of_image_%": 57.7,
+  "bright_len_percentiles_p5_p50_p95": [
+   20,
+   34,
+   40
+  ],
+  "bright_start_percentiles_p5_p50_p95": [
+   629,
+   663,
+   677
+  ],
+  "bright_band_%_by_class": {
+   "Biological": 72.2,
+   "Fibres": 80.7,
+   "Films_Coated_Surface": 20.1,
+   "MEMS_devices_and_electrodes": 46.1,
+   "Nanowires": 68.0,
+   "Particles": 53.6,
+   "Patterned_surface": 64.5,
+   "Porous_Sponge": 36.2,
+   "Powder": 72.6,
+   "Tips": 80.8
+  },
+  "bright_start_hist_64row_bins": {
+   "0": 355,
+   "64": 29,
+   "128": 25,
+   "192": 19,
+   "256": 12,
+   "320": 15,
+   "384": 23,
+   "448": 40,
+   "512": 35,
+   "576": 849,
+   "640": 11354,
+   "704": 13
+  }
+ },
+ "top_clusters_at_T4": [
+  {
+   "size": 657,
+   "classes": {
+    "Particles": 306,
+    "Patterned_surface": 258,
+    "Nanowires": 30,
+    "Biological": 26,
+    "MEMS_devices_and_electrodes": 16,
+    "Tips": 11,
+    "Films_Coated_Surface": 7,
+    "Powder": 2,
+    "Porous_Sponge": 1
+   },
+   "mean_thumb_std": 37.5,
+   "mean_brightness": 102.6
+  },
+  {
+   "size": 152,
+   "classes": {
+    "MEMS_devices_and_electrodes": 152
+   },
+   "mean_thumb_std": 53.9,
+   "mean_brightness": 90.0
+  },
+  {
+   "size": 68,
+   "classes": {
+    "Films_Coated_Surface": 35,
+    "Patterned_surface": 12,
+    "Particles": 9,
+    "Biological": 8,
+    "Nanowires": 4
+   },
+   "mean_thumb_std": 31.1,
+   "mean_brightness": 133.4
+  },
+  {
+   "size": 49,
+   "classes": {
+    "MEMS_devices_and_electrodes": 49
+   },
+   "mean_thumb_std": 40.8,
+   "mean_brightness": 84.3
+  },
+  {
+   "size": 36,
+   "classes": {
+    "MEMS_devices_and_electrodes": 36
+   },
+   "mean_thumb_std": 46.6,
+   "mean_brightness": 123.8
+  },
+  {
+   "size": 31,
+   "classes": {
+    "Particles": 31
+   },
+   "mean_thumb_std": 64.5,
+   "mean_brightness": 34.6
+  },
+  {
+   "size": 31,
+   "classes": {
+    "Particles": 31
+   },
+   "mean_thumb_std": 53.3,
+   "mean_brightness": 60.9
+  },
+  {
+   "size": 25,
+   "classes": {
+    "MEMS_devices_and_electrodes": 25
+   },
+   "mean_thumb_std": 59.1,
+   "mean_brightness": 70.1
+  }
+ ],
+ "median_thumb_std_all_images": 47.2,
+ "near_dup_cluster_membership_pct_by_class_T4": {
+  "Biological": 6.2,
+  "Fibres": 0.0,
+  "Films_Coated_Surface": 16.5,
+  "MEMS_devices_and_electrodes": 14.7,
+  "Nanowires": 5.7,
+  "Particles": 18.6,
+  "Patterned_surface": 11.3,
+  "Porous_Sponge": 11.5,
+  "Powder": 1.9,
+  "Tips": 14.3
+ },
+ "resolution_by_class": {
+  "Biological": {
+   "1024x768": 956,
+   "2048x1536": 6
+  },
+  "Fibres": {
+   "1024x768": 150
+  },
+  "Films_Coated_Surface": {
+   "1023x767": 1,
+   "1024x768": 308
+  },
+  "MEMS_devices_and_electrodes": {
+   "1023x767": 17,
+   "1024x768": 4495,
+   "2048x1536": 2,
+   "3072x2304": 69
+  },
+  "Nanowires": {
+   "1023x767": 8,
+   "1024x768": 3802,
+   "2048x1536": 5
+  },
+  "Particles": {
+   "1023x767": 13,
+   "1024x768": 3835,
+   "3072x2304": 57
+  },
+  "Patterned_surface": {
+   "1022x766": 4,
+   "1023x767": 10,
+   "1024x768": 4709,
+   "2048x1536": 25,
+   "3072x2304": 4
+  },
+  "Porous_Sponge": {
+   "1024x768": 174
+  },
+  "Powder": {
+   "1022x766": 1,
+   "1023x767": 6,
+   "1024x768": 843,
+   "3072x2304": 48
+  },
+  "Tips": {
+   "1024x768": 1621
+  }
+ },
+ "rgb_really_gray_%_by_class": {
+  "Biological": 5.8,
+  "Fibres": 8.0,
+  "Films_Coated_Surface": 6.1,
+  "MEMS_devices_and_electrodes": 17.5,
+  "Nanowires": 10.1,
+  "Particles": 8.3,
+  "Patterned_surface": 18.2,
+  "Porous_Sponge": 4.0,
+  "Powder": 15.7,
+  "Tips": 15.2
+ },
+ "dark_band_%_by_class": {
+  "Biological": 0.1,
+  "Fibres": 0.0,
+  "Films_Coated_Surface": 1.0,
+  "MEMS_devices_and_electrodes": 21.0,
+  "Nanowires": 13.0,
+  "Particles": 18.2,
+  "Patterned_surface": 7.1,
+  "Porous_Sponge": 0.6,
+  "Powder": 0.2,
+  "Tips": 29.3
+ },
+ "no_bright_no_dark_band_%": 33.1,
+ "archives": [
+  {
+   "archive": "Biological.tar",
+   "images": 962,
+   "bytes": 703825920,
+   "md5": "296cd6be5ac97b2203e807e9552d9aeb",
+   "sha256": "0ccb23ff5f4fefbf57a8f298a343b345da39c4c0856de336508e7ce36e571268",
+   "seconds": 35.2
+  },
+  {
+   "archive": "Fibres.tar",
+   "images": 150,
+   "bytes": 80977920,
+   "md5": "c942e19b8ab221d3c700f44a0c67b306",
+   "sha256": "d0c8f1f12e567397622399c538be206116b8580fc6d18adfdcd08fa9c758cc3d",
+   "seconds": 3.8
+  },
+  {
+   "archive": "Films_Coated_Surface.tar",
+   "images": 309,
+   "bytes": 197632000,
+   "md5": "3c2e6cb914e1864855d9c3805ef47913",
+   "sha256": "cf3b17f1283df82883457bbd6ad154ab473d8fd34b82b31e7231b9245bbef874",
+   "seconds": 9.9
+  },
+  {
+   "archive": "MEMS_devices_and_electrodes.tar",
+   "images": 4583,
+   "bytes": 3305451520,
+   "md5": "98a988b167ff25528b80ab8bf7585c04",
+   "sha256": "ef47512e2d31aa9ffe39881fe63725494e7e1d0ec866f712613bb56ac2fc5959",
+   "seconds": 151.6
+  },
+  {
+   "archive": "Nanowires.tar",
+   "images": 3815,
+   "bytes": 2203371520,
+   "md5": "bc51bd48acbb693e5f34e0c9f882cf3e",
+   "sha256": "56139f2deb14a7b4214dd644565246dd147dff767804aff55cd9addda64c2a66",
+   "seconds": 99.9
+  },
+  {
+   "archive": "Particles.tar",
+   "images": 3905,
+   "bytes": 2519879680,
+   "md5": "61266e91981d0a0b4f7c6f15061cffc9",
+   "sha256": "37073dd159184e64c6fa5ad6a82e09b47c4e94077b0699d22a6a0251eb2b6889",
+   "seconds": 141.4
+  },
+  {
+   "archive": "Patterned_surface.tar",
+   "images": 4752,
+   "bytes": 2874941440,
+   "md5": "44d3964bef4ee7e84ba2f99c84036e9c",
+   "sha256": "e5c5cabe5e55aebffe7c4420b1db14f8be6ad75fc275c5dded01f6f001c95649",
+   "seconds": 127.0
+  },
+  {
+   "archive": "Porous_Sponge.tar",
+   "images": 174,
+   "bytes": 119562240,
+   "md5": "fc71dc2603d6255b28aa6954a0190665",
+   "sha256": "a011f1391dfdb7323d75c0863279722cefdb85b774daee281bcfe3f08e5a2516",
+   "seconds": 5.6
+  },
+  {
+   "archive": "Powder.tar",
+   "images": 898,
+   "bytes": 865822720,
+   "md5": "8209599720c2b5e0cfde6a985d49d0a3",
+   "sha256": "8248b92ba75ad4cbd903619fcaf68fc8ade71c73592db0fcd926d89d19de98d8",
+   "seconds": 43.2
+  },
+  {
+   "archive": "Tips.tar",
+   "images": 1621,
+   "bytes": 707338240,
+   "md5": "e5a5bc0fbc7f3339b4ab5f4229991290",
+   "sha256": "6b7fffc11a7268c37225cda7945395e3acdc2bb85e03e22c1f6b2a293ffa3a90",
+   "seconds": 37.4
+  }
+ ]
+}
