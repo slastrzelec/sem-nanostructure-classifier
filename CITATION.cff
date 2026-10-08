@@ -8,6 +8,8 @@ authors:
   - family-names: Strzelec
     given-names: Sławomir
 repository-code: "https://github.com/slastrzelec/sem-nanostructure-classifier"
+url: "https://sem-nanostructure-classifier.streamlit.app/"
+repository-artifact: "https://huggingface.co/slastrzelec/sem-nanostructure-classifier-convnext-tiny"
 references:
   - type: article
     title: "The first annotated set of scanning electron microscopy images for nanoscience"

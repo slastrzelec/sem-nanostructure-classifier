@@ -1,8 +1,12 @@
 # SEM nanostructure classifier: how much of the accuracy is real?
 
+[![tests](https://github.com/slastrzelec/sem-nanostructure-classifier/actions/workflows/ci.yml/badge.svg)](https://github.com/slastrzelec/sem-nanostructure-classifier/actions/workflows/ci.yml) [![licence: MIT](https://img.shields.io/badge/licence-MIT-blue)](LICENSE) [![live demo](https://img.shields.io/badge/demo-Streamlit-FF4B4B)](https://sem-nanostructure-classifier.streamlit.app/) [![weights](https://img.shields.io/badge/weights-Hugging%20Face-FFD21E)](https://huggingface.co/slastrzelec/sem-nanostructure-classifier-convnext-tiny)
+
 A classifier for scanning-electron-microscopy (SEM) images of nanostructures, built to answer one question: **how much of the reported accuracy comes from near-duplicate leakage and from shortcuts such as the instrument info bar, and what does a leakage-free evaluation look like?**
 
 Everything here follows a written specification ([`SPEC.md`](SPEC.md)) that was fixed before the code, including the rules for the test split. Every number below comes from a logged run in `reports/`.
+
+**Links:** [live demo](https://sem-nanostructure-classifier.streamlit.app/) · [weights and model card on Hugging Face](https://huggingface.co/slastrzelec/sem-nanostructure-classifier-convnext-tiny) · [`MODEL_CARD.md`](MODEL_CARD.md) · [`SPEC.md`](SPEC.md) · [portfolio](https://slastrzelec.github.io/portfolio/)
 
 ## Short answer
 
@@ -13,7 +17,7 @@ Everything here follows a written specification ([`SPEC.md`](SPEC.md)) that was 
 | Does the model read the info bar? | The bar is **not necessary** for accuracy: removing the bottom 18.75% of every image costs 1.4 pp macro-F1 (interval +0.4 to +2.3) and 0.45 pp accuracy on test, while removing the same amount from the top costs nothing (-0.03 pp). The validation split showed no drop (+0.2 pp), the effect depends mainly on one seed pair and sits in the small classes. I read this as "no evidence of a shortcut that carries the classification; a contribution of about 1-1.5 pp in small classes cannot be excluded". |
 | Is the confidence usable? | After temperature scaling (T = 3.3) the test ECE falls from 0.024 to 0.006 (ConvNeXt-Tiny). Abstaining below a threshold chosen on validation keeps 94% of the test images at 99.2% accuracy (overall 97.2%) and catches about 71% of the errors. |
 
-![demo](docs/demo.png)
+[![Live demo: SEM nanostructure classifier](docs/demo.png)](https://sem-nanostructure-classifier.streamlit.app/)
 
 ## Data
 

@@ -57,6 +57,7 @@ with st.sidebar:
     st.write(f"temperature T = {I.TEMPERATURE}")
     st.write(f"\"uncertain\" below confidence {I.THETA:.4f}")
     show_cam = st.checkbox("Show Grad-CAM", value=True)
+    st.markdown("[Source code and evaluation](https://github.com/slastrzelec/sem-nanostructure-classifier)  \n[Weights and model card](https://huggingface.co/slastrzelec/sem-nanostructure-classifier-convnext-tiny)")
 
 data, true_label = None, None
 tab_example, tab_upload = st.tabs(["Example image (validation split)", "Upload your own"])

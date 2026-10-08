@@ -12,7 +12,7 @@ tags:
 
 # SEM nanostructure classifier (ConvNeXt-Tiny, group split, seed 2)
 
-ConvNeXt-Tiny fine-tuned to classify scanning-electron-microscopy (SEM) images into 10 nanostructure classes. It is the checkpoint behind the demo of the project [`sem-nanostructure-classifier`](https://github.com/slastrzelec/sem-nanostructure-classifier), whose goal is an honest, leakage-free evaluation rather than a leaderboard score.
+ConvNeXt-Tiny fine-tuned to classify scanning-electron-microscopy (SEM) images into 10 nanostructure classes. It is the checkpoint behind the [live demo](https://sem-nanostructure-classifier.streamlit.app/) of the project [`sem-nanostructure-classifier`](https://github.com/slastrzelec/sem-nanostructure-classifier), whose goal is an honest, leakage-free evaluation rather than a leaderboard score.
 
 ## Files
 
