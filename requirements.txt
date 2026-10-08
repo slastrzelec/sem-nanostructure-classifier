@@ -1,0 +1,7 @@
+# Demo dependencies (verified with these versions). CPU-only torch: the PyPI Linux wheel would pull CUDA libraries.
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy==2.5.3
+Pillow==12.3.0
+torch==2.14.1
+torchvision==0.29.1
+streamlit==1.65.0

@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 
 from semcls import infer as I  # noqa: E402
+from semcls.fetch import DownloadError, ensure_checkpoint  # noqa: E402
 
 CKPT = Path(os.environ.get("SEM_CHECKPOINT", ROOT / "data" / "models" / "convnext_tiny_group094_s2_best.pt"))
 SAMPLES = ROOT / "app" / "samples"
@@ -21,9 +22,9 @@ SAMPLES = ROOT / "app" / "samples"
 st.set_page_config(page_title="SEM nanostructure classifier", layout="wide")
 
 
-@st.cache_resource(show_spinner="Loading model...")
+@st.cache_resource(show_spinner="Loading model (the first start downloads 111 MB, checked against a recorded sha256)...")
 def load_model():
-    return I.Classifier.load(CKPT)
+    return I.Classifier.load(ensure_checkpoint(CKPT, I.CHECKPOINT_SHA256))
 
 
 def overlay(image, cam, strength=0.6):
@@ -43,13 +44,10 @@ st.title("SEM nanostructure classifier")
 st.caption("ConvNeXt-Tiny fine-tuned on the NFFA-EUROPE SEM dataset (10 classes), evaluated with a leakage-free split. "
            "Research demo, not a measuring instrument.")
 
-if not CKPT.exists():
-    st.error(f"Checkpoint not found: {CKPT.name}. Place it in data/models/ or set SEM_CHECKPOINT (see the model card).")
-    st.stop()
 try:
     clf = load_model()
-except I.ChecksumError as e:
-    st.error(str(e))
+except (I.ChecksumError, DownloadError) as e:
+    st.error(f"Model could not be loaded: {e}")
     st.stop()
 
 with st.sidebar:

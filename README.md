@@ -48,11 +48,11 @@ The weakest classes are Films_Coated_Surface (recall 0.84, confused with Particl
 ## Demo
 
 ```
-pip install -r requirements-demo.txt
+pip install -r requirements.txt
 streamlit run app/streamlit_app.py
 ```
 
-Needs `data/models/convnext_tiny_group094_s2_best.pt` (weights: [Hugging Face](https://huggingface.co/slastrzelec/sem-nanostructure-classifier-convnext-tiny), model card in [`MODEL_CARD.md`](MODEL_CARD.md); the app verifies the sha256 before loading). It shows the top-3 classes with calibrated probability, an "uncertain" flag below confidence 0.915 and an illustrative Grad-CAM. Uploads (PNG/JPEG, at most 10 MB) are processed in memory only; nothing is stored or logged.
+The weights ([Hugging Face](https://huggingface.co/slastrzelec/sem-nanostructure-classifier-convnext-tiny), model card in [`MODEL_CARD.md`](MODEL_CARD.md)) are downloaded on the first start into `data/models/` over HTTPS and checked against the sha256 recorded in the code, before and again after saving; a mismatch means the model is not loaded. A file placed there by hand (or set with `SEM_CHECKPOINT`) is used as is, with the same check. `requirements.txt` installs CPU-only torch. It shows the top-3 classes with calibrated probability, an "uncertain" flag below confidence 0.915 and an illustrative Grad-CAM. Uploads (PNG/JPEG, at most 10 MB) are processed in memory only; nothing is stored or logged.
 
 ## Reproduce
 
