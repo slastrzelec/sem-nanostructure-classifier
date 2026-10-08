@@ -20,7 +20,7 @@ ConvNeXt-Tiny fine-tuned to classify scanning-electron-microscopy (SEM) images i
 |---|---|
 | `convnext_tiny_group094_s2_best.pt` (PyTorch `state_dict`, 111,365,791 bytes) | `7e856feee47b86c3fb97d9a581bd7a8c9f1bc24454654e82330003fd0f3a194f` |
 
-Load with `torch.load(path, map_location="cpu", weights_only=True)` into `torchvision.models.convnext_tiny` whose last layer is `Linear(768, 10)`; verify the hash first. The project repository contains the exact inference code (`src/semcls/infer.py`).
+Download: <https://huggingface.co/slastrzelec/sem-nanostructure-classifier-convnext-tiny> (place the file in `data/models/` of the project repository). Load with `torch.load(path, map_location="cpu", weights_only=True)` into `torchvision.models.convnext_tiny` whose last layer is `Linear(768, 10)`; verify the hash first. The project repository contains the exact inference code (`src/semcls/infer.py`).
 
 ## Intended use and not intended use
 

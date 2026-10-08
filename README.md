@@ -52,7 +52,7 @@ pip install -r requirements-demo.txt
 streamlit run app/streamlit_app.py
 ```
 
-Needs `data/models/convnext_tiny_group094_s2_best.pt` (weights are on Hugging Face, see [`MODEL_CARD.md`](MODEL_CARD.md); the app verifies the sha256 before loading). It shows the top-3 classes with calibrated probability, an "uncertain" flag below confidence 0.915 and an illustrative Grad-CAM. Uploads (PNG/JPEG, at most 10 MB) are processed in memory only; nothing is stored or logged.
+Needs `data/models/convnext_tiny_group094_s2_best.pt` (weights: [Hugging Face](https://huggingface.co/slastrzelec/sem-nanostructure-classifier-convnext-tiny), model card in [`MODEL_CARD.md`](MODEL_CARD.md); the app verifies the sha256 before loading). It shows the top-3 classes with calibrated probability, an "uncertain" flag below confidence 0.915 and an illustrative Grad-CAM. Uploads (PNG/JPEG, at most 10 MB) are processed in memory only; nothing is stored or logged.
 
 ## Reproduce
 
