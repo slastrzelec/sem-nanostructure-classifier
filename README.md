@@ -47,6 +47,8 @@ The weakest classes are Films_Coated_Surface (recall 0.84, confused with Particl
 
 ## Demo
 
+Live: <https://sem-nanostructure-classifier.streamlit.app/> (Streamlit Community Cloud; a sleeping app wakes up on the first visit and downloads the weights again, which takes a moment). Locally:
+
 ```
 pip install -r requirements.txt
 streamlit run app/streamlit_app.py
